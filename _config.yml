@@ -4,20 +4,19 @@
 
 # Site
 title: 能動的に代謝しよう
-subtitle: 小笠原亨の公式サイト
+subtitle: 小笠原亨のサイト
 description:
 keywords:
 author: 小笠原 亨
 language: ja
-timezone: japan
+timezone: Japan
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://ogasawara.me/
 root: /
-permalink: /:year/:id.html
+permalink: /:year:month:day-:title.html
 permalink_defaults: 
-  id: :month:day_:title
 
 # Directory
 source_dir: source
@@ -56,7 +55,12 @@ index_generator:
   
 # Category & Tag
 default_category: uncategorized
-category_map:
+category_map: 
+  生活と仕事の術: lifehack
+  ワークアウト: workout
+  日記ブログ: dairy
+  能動的代謝: noudouteki
+  食事栄養: eiyou
 tag_map:
 
 # Date / Time format
@@ -68,18 +72,25 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 20
+per_page: 100
 pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: indigo
+theme: Wikitten #indigo  #Wikitten  ## indigo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+
 deploy:
-  type: git
-  repo: https://github.com/ujina/official.git
-  branch: master
-  message: update
+  type: netlify
+  token: a8eca1fa8328b0a913c1cc310435e0bd18a4271fae9f7ab0735c6a8b1aab711e
+  site_id: 70282b67-1ca7-423f-8886-fd55c2755934
+  zip: false  #deploy with zip file.
+
+#deploy:
+#  type: git
+#  repo: https://github.com/ujina/official.git
+#  branch: master
+#  message: update

@@ -1,17 +1,9 @@
 ---
-title: このブログについて
-layout: page
-description: 
-comments: false
-reward: false
-date: 2019-02-28 13:07:14
+layout: about
+date: 2020-05-17 00:00:00
+comments:
 ---
 
-@card{
+## プロフィール
 
-# このブログについて
-
-このブログは静的サイトジェネレーターのひとつ [Hexo](https://hexo.io) を使って構成しています。手元ローカルに書いたもののファイルを残したくてこのようにしています。
-
-
-}
+ここを書いている小笠原亨です。
