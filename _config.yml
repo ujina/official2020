@@ -4,7 +4,7 @@
 
 # Site
 title: 能動的に代謝しよう
-subtitle: 小笠原亨のサイト
+subtitle: 小笠原亨の公式サイト
 description:
 keywords:
 author: 小笠原 亨
@@ -13,10 +13,15 @@ timezone: Japan
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://oga2020.netlify.app
+url: https://ogasawara.me/
 root: /
-permalink: /:year:month:day-:title.html
+permalink: :year:month:day-:title.html
 permalink_defaults: 
+
+permalink_pathed_title:
+  use: true,
+  prefix: post, # optional
+  postfix: "" # optional
 
 # Directory
 source_dir: source
@@ -29,7 +34,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :year:month:day-:title.md # File name of new posts
+new_post_name: :year/:month/:day/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -67,7 +72,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: YYYYMMDD
 time_format: HH:mm:ss
 
 # Pagination
